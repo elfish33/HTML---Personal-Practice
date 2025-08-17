@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nthchild</title>
+<style>
+    table.schedule {
+        width: 400px;
+        margin: 20px auto;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 15px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    table.schedule {border-collapse: collapse;}
+    thead {}
+    table.schedule thead tr {}
+    table.schedule thead th {
+        background-color: #e1dddd;
+        padding: 4px;
+    }
+    table.schedule tbody tr:hover {
+        transform: scale(1.02);
+        color: white;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    table.schedule tbody tr:nth-child(even) {
+        background-color: cornflowerblue;
+    }
+    table.schedule tbody tr:nth-child(odd) {
+        background-color: coral;
+    }
+    table.schedule tbody tr:nth-child(2) {
+        font-weight: 600;
+        border: 2px dotted white;
+        color: white;
+    }
+    table.schedule tbody td {
+        padding-left: 10px;
+    }
+</style>
+</head>
+<body>
+        <table class="schedule">
+    <thead>
+        <tr>
+        <th>День</th>
+        <th>Предмет</th>
+        <th>Время</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Понедельник</td>
+        <td>Математика</td>
+        <td>09:00</td>
+        </tr>
+        <tr>
+        <td>Вторник</td>
+        <td>История</td>
+        <td>10:00</td>
+        </tr>
+        <tr>
+        <td>Среда</td>
+        <td>Физика</td>
+        <td>11:00</td>
+        </tr>
+        <tr>
+        <td>Четверг</td>
+        <td>Литература</td>
+        <td>12:00</td>
+        </tr>
+        <tr>
+        <td>Пятница</td>
+        <td>Биология</td>
+        <td>13:00</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Practice</title>
+    <!-- <link rel="stylesheet" href="./reset.css"> -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <style>
+        div.card {
+            width: 300px;
+            background-color: #FFC0CB;
+            color: #FFF;
+            border-radius: 12px;
+            padding: 20px;
+        }
+        div.profile {
+            width: 400px;
+            background-color: #eee;
+            color: #333;
+            margin: 20px;
+        }
+        div.profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        div.profile h3 {
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+        }
+        div.profile p {
+            font-style: italic;
+            font-size: 14px;
+            padding-top: 10px;
+        }
+    /* team table style goes here */
+        table.team-table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-family: 'Pretendard', sans-serif;
+        font-size: 16px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 1px solid black;
+    }
+    table.team-table caption {
+        font-family: 'Pretendard' sans-serif;
+        font-size: 18px;
+        padding: 12px;
+    }
+    table.team-table thead {
+        background-color: #333;
+        color: #FFF;
+        
+    }
+
+    table.team-table thead th {
+        text-transform: capitalize;
+        padding: 15px;
+        border-radius: 25px;
+        font-size: 16px;
+        color: #FFF;
+        font-weight: 700;
+    }
+
+    table.team-table tbody tr:nth-child(odd) {
+        background-color: #FFF;
+    }
+
+    table.team-table tbody tr:nth-child(even) {
+        background-color: #c9c9c9;
+    }
+
+    table.team-table tbody td {
+        padding: 12px;
+        border: 1px solid #eee;
+        
+    }
+
+    </style>
+</head>
+<body>
+    <!-- 1 -->
+    <div class="card">
+        <h2>Привет, CSS!</h2>
+        <p>Это мой первый квестовый блок.</p>
+    </div>
+    <!-- 2 -->
+    <div class="profile">
+        <img src="https://lh3.googleusercontent.com/a/ACg8ocIOJ-hVLCRPpEbSUW5dORlL73i9NVRdIESSLmkMYYVZ3VMWJU7N9g=s576-c-no" alt="Фото профиля">
+        <h3>Полина</h3>
+        <p>Люблю CSS и квесты!</p>
+    </div>
+    <!-- team table goes here -->
+    <table class="team-table">
+        <caption>Наша команда</caption>
+    <thead>
+        <tr>
+        <th>Имя</th>
+        <th>Роль</th>
+        <th>Опыт (лет)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <td>Полина</td>
+        <td>Дизайнер</td>
+        <td>5</td>
+        </tr>
+        <tr>
+        <td>Максим</td>
+        <td>Разработчик</td>
+        <td>7</td>
+        </tr>
+        <tr>
+        <td>Соня</td>
+        <td>Тестировщик</td>
+        <td>3</td>
+        </tr>
+        <tr>
+        <td>Илья</td>
+        <td>Менеджер</td>
+        <td>6</td>
+        </tr>
+    </tbody>
+    </table>
+
+</body>
+</html>
