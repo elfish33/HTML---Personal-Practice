@@ -1,13 +1,26 @@
 body {
-    width: 1000px; height: 100vh;
-    margin: 40px auto;}
-body main {}
-body main .card1 {
+    width: 100wh; height: 100vh;
+    margin: 0 auto;
+}
+body main {
+    width: 100%;
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+body main .row1{
+    width: 100%; height: max-content;
+    display: flex; flex-flow: row nowrap; /* wrap? nowrap? */
+    justify-content: center; align-items: flex-start;
+    gap: 30px;
+}
+body main .row1 .card1 {
     display: flex; flex-flow: column nowrap;
     justify-content: center; align-items: center;
     gap: 20px;
 }
-body main .card1 .card_text1 {
+body main .row1 .card1 .card_text1 {
     background-color: #000;
     width: 300px; height: max-content;
     border-radius: 15px;
@@ -17,7 +30,7 @@ body main .card1 .card_text1 {
     gap: 20px;
     position: relative;
 }
-body main .card1 .card_text1::after{
+body main .row1 .card1 .card_text1::after{
     content: '';
     position: absolute;
     bottom: -10px; left: 10%;
@@ -27,28 +40,126 @@ body main .card1 .card_text1::after{
     width: 0; height: 0;
     transform: translateY(-5%);
 }
-body main .card1 .card_text1 p:nth-of-type(1),
+body main .row1 .card1 .card_text1 p:nth-of-type(1),
 body main .card1 .card_text1 p:nth-of-type(2){
     color: #fff; line-height: 1.3;
     font-size: 1.063rem; font-weight: 500;
 }
-body main .card1 .profile {
+body main .row1 .card1 .profile {
     display: flex;
     flex-flow: row nowrap;
     width: 300px;
     padding: 5px;
 }
-body main .card1 .profile svg {}
-body main .card1 .profile .name_pst {
-    
+body main .row1 .card1 .profile svg {}
+body main .row1 .card1 .profile .name_pst {
     display: flex; flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-start;
     gap: 4px;
     padding: 8px;
 }
-body main .card1 .profile .name_pst h1 {
+body main .row1 .card1 .profile .name_pst h1 {
     font-size: 1.25rem;
     font-weight: 600;
 }
-body main .card1 .profile .name_pst p {}
+body main .row1 .card1 .profile .name_pst p {}
+
+body main .row1 .card2 {
+    width: 270px; height: 265px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;flex-flow: column nowrap;
+    justify-content: space-between;
+}
+body main .row1 .card2 .text {
+    line-height: 1.3;
+    font-size: 1.063rem;
+}
+body main .row1 .card2 .profile {
+    padding-top: 15px;
+    display: flex;flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center; gap: 8px;
+}
+body main .row1 .card2 .profile svg {}
+body main .card2 .profile .name_pst {
+    display: flex; flex-flow: column wrap;
+    gap: 4px;
+}
+body main .row1 .card2 .profile .name_pst h1 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+body main .row1 .card2 .profile .name_pst p {}
+body main .card3 {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    gap: 15px;
+}
+body main.card3 .image {}
+body main .card3 .image svg {
+    border-radius: 15px;
+    /* width: 100%; */
+}
+body main .card3 .name_pst_review {
+    width: 300px; height: 200px;
+    background-color: #000;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex; flex-flow: column nowrap;
+    justify-content: space-around;
+}
+body main .card3 .name_pst_review .stars {
+    display: flex; flex-flow: row nowrap;
+    justify-content: flex-start; align-items: center;
+    gap: 5px;
+}
+body main .card3 .name_pst_review .stars svg {
+    fill: #F0C103;
+}
+body main .card3 .name_pst_review h1 {
+    color: #fff;
+    font-size: 1.25rem; font-weight: 600;
+}
+body main .card3 .name_pst_review p:nth-of-type(1) {
+    color: #bebebe;
+    font-size: 00.875rem;
+}
+body main .card3 .name_pst_review p:nth-of-type(2) {
+    color: #fff;
+    font-size: 00.875rem; line-height: 1.3;
+}
+body main .card4 {
+    width: 55%; height: max-content;
+    border: 2px solid #000;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex; flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+}
+body main .card4 .info {}
+body main .card4 .profile_wrap {}
+body main .card4 .profile_wrap .button_image {
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+    gap: 15px;
+}
+body main .card4 .profile_wrap .button_image .prev,
+body main .card4 .profile_wrap .button_image .next {
+    width: 24px; height: 24px;
+}
+body main .card4 .profile_wrap .button_image .prev img,
+body main .card4 .profile_wrap .button_image .next img {
+    width: 100%; height: 100%;
+}
+body main .card4 .profile_wrap .button_image svg:nth-of-type(1),
+body main .card4 .profile_wrap .button_image svg:nth-of-type(3) {
+    opacity: 0.6;
+}
+body main .card4 .profile_wrap .button_image svg:nth-of-type(2) {}
+body main .card4 .profile_wrap > h1 {}
